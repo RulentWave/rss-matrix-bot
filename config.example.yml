@@ -1,0 +1,25 @@
+matrix:
+  homeserver: "https://matrix.example.com"
+  user_id: "@rssbot:example.com"
+  password: "your_bot_password"
+  # Or use an access token instead of password:
+  # access_token: "your_access_token"
+  device_name: "RSSBot"
+  # Path for nio's E2E encryption store
+  store_path: "/data/store"
+
+admin_user: "@you:example.com"
+
+poll_interval_minutes: 15
+
+# Initial LLM config (can also be set via bot commands)
+llm:
+  endpoint: "https://api.openai.com/v1"
+  api_key: "sk-..."
+  model: "gpt-4o-mini"
+
+default_filter_criteria: >
+  Is this article genuinely informative, educational, or insightful?
+  It should teach the reader something meaningful or provide valuable
+  analysis. Reject articles that are primarily promotional, clickbait,
+  low-effort opinion pieces, or purely news aggregation with no depth.

@@ -1,0 +1,4 @@
+config.yml
+bot_store/
+rss_bot.db
+__pycache__/
