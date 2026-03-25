@@ -2,7 +2,7 @@ import aiosqlite
 import json
 from typing import Optional
 
-DB_PATH = "rss_bot.db"
+DB_PATH = "/data/store/rss_bot.db"
 
 
 async def init_db():
